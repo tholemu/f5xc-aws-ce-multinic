@@ -58,32 +58,6 @@ variable "ce1_inside_subnet_id" {
   type        = string
 }
 
-
-variable "ce2_outside_subnet_id" {
-  description = "OPTIONAL: The AWS subnet ID for the outside subnet of Customer Edge 2"
-  type        = string
-  default     = ""
-}
-
-variable "ce2_inside_subnet_id" {
-  description = "OPTIONAL: The AWS subnet ID for the inside subnet of Customer Edge 2"
-  type        = string
-  default     = ""
-}
-
-variable "ce3_outside_subnet_id" {
-  description = "OPTIONAL: The AWS subnet ID for the outside subnet of Customer Edge 3"
-  type        = string
-  default     = ""
-}
-
-variable "ce3_inside_subnet_id" {
-  description = "OPTIONAL: The AWS subnet ID for the inside subnet of Customer Edge 3"
-  type        = string
-  default     = ""
-
-}
-
 variable "outside_security_group" {
   description = "REQUIRED: The AWS security group ID for the outside interfaces"
   type        = string
@@ -93,7 +67,6 @@ variable "inside_security_group" {
   description = "REQUIRED: The AWS security group ID for the inside interfaces"
   type        = string
 }
-
 
 variable "amis" {
   description = "REQUIRED: The AWS amis for the Customer Edge image"
