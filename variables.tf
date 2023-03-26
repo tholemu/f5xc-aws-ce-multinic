@@ -24,18 +24,6 @@ variable "az1" {
   default     = ""
 }
 
-variable "az2" {
-  description = "OPTIONAL: AWS availability zone to deploy second Customer Edge into"
-  type        = string
-  default     = ""
-}
-
-variable "az3" {
-  description = "OPTIONAL: AWS availability zone to deploy third Customer Edge into"
-  type        = string
-  default     = ""
-}
-
 variable "project_prefix" {
   description = "OPTIONAL: Provide a project name prefix that will be applied"
   type        = string
